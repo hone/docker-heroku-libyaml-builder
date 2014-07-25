@@ -1,4 +1,4 @@
-FROM fabiokung/cedar
+FROM heroku/cedar:14
 MAINTAINER hone
 
 # setup workspace
