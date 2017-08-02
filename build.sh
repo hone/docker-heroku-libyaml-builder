@@ -12,4 +12,5 @@ env CFLAGS=-fPIC ./configure --enable-static --disable-shared --prefix=$artifact
 make
 make install
 cd $artifact_dir
-tar czf $output_dir/libyaml-$VERSION.tgz *
+mkdir -p $output_dir/$STACK
+tar czf $output_dir/$STACK/libyaml-$VERSION.tgz *
